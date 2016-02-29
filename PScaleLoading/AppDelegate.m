@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  PScaleLoading
 //
-//  Created by xp_mac on 16/2/29.
-//  Copyright © 2016年 xp_mac. All rights reserved.
+//  Created by on 16-2-26.
+//  Copyright (c) 2016年 Carl. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "MainViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    MainViewController *mainVC = [[MainViewController alloc] init];
+    self.window.rootViewController = mainVC;
+    
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
