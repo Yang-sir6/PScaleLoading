@@ -20,7 +20,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    //
+    //主视图控制器
     MainViewController *mainVC = [[MainViewController alloc] init];
     self.window.rootViewController = mainVC;
     
